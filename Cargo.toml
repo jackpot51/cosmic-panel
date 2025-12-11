@@ -32,3 +32,17 @@ cctk = { package = "cosmic-client-toolkit", git = "https://github.com/pop-os//co
 
 # [patch."https://github.com/pop-os/libcosmic"]
 # cosmic-config = { git = "https://github.com/pop-os/libcosmic//", branch = "zbus-4" }
+
+[patch.crates-io]
+rustix = { git = "https://github.com/bytecodealliance/rustix" }
+winit = { git = "https://github.com/jackpot51/winit.git", branch = "redox-0.30" }
+# wayland-rs patches using git
+wayland-backend = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-client = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-cursor = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-egl = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-protocols = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-protocols-misc = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-protocols-wlr = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-server = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-sys = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
